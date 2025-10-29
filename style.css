@@ -1,0 +1,102 @@
+/* 🎨 Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* 🌈 Main Container */
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  padding: 30px 40px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 25px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* 🎛️ Toolbar */
+.toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.tool {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* 🎨 Inputs */
+input[type="color"] {
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  background: transparent;
+}
+
+input[type="range"] {
+  width: 120px;
+  cursor: pointer;
+}
+
+/* 🧼 Buttons */
+button {
+  background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 4px 10px rgba(255, 120, 160, 0.4);
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(255, 120, 160, 0.6);
+}
+
+/* 🖼️ Canvas */
+canvas {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  cursor: crosshair;
+  width: 100%;
+  max-width: 720px;
+  height: 480px;
+}
